@@ -117,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
         mNextButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                if (mCurrentIndex < 5){
+                if (mCurrentIndex < mQuestions.length-1){
                     enableButtons();
                     mCurrentIndex = (mCurrentIndex + 1) % mQuestions.length;
                     updateQuestion();
