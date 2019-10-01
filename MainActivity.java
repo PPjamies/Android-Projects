@@ -78,11 +78,6 @@ public class MainActivity extends AppCompatActivity {
         Log.d(TAG,"onCreate(Bundle) called"); //create log message
         setContentView(R.layout.activity_main); //grabs xml layout for page
 
-        //checks if there was a previous saved instance state, if not relaunch a clean activity
-        if(savedInstanceState != null){
-            mCurrentIndex = savedInstanceState.getInt(KEY_INDEX,0);
-        }
-
         mQuestionTextView = (TextView) findViewById(R.id.question_text_view); //grab question text view
 
         mTrueButton = findViewById(R.id.true_button);
@@ -96,6 +91,7 @@ public class MainActivity extends AppCompatActivity {
                     mQuestions[mCurrentIndex].setUserAnsweredOnce(true); //user has now answered once
                 }else{
                     disableButtons();
+                    Toast.makeText(MainActivity.this,R.string.answered_question,Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -111,6 +107,7 @@ public class MainActivity extends AppCompatActivity {
                     mQuestions[mCurrentIndex].setUserAnsweredOnce(true); //user has now answered once
                 }else{
                     disableButtons();
+                    Toast.makeText(MainActivity.this,R.string.answered_question,Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -119,6 +116,7 @@ public class MainActivity extends AppCompatActivity {
         mNextButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
+                enableButtons();
                 mCurrentIndex = (mCurrentIndex+1)% mQuestions.length;
                 updateQuestion();
             }
@@ -128,12 +126,18 @@ public class MainActivity extends AppCompatActivity {
         mPrevButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
+                enableButtons();
                 mCurrentIndex = (mCurrentIndex-1)%mQuestions.length;
                 updateQuestion();
             }
         });
 
         updateQuestion();
+
+        //checks if there was a previous saved instance state, if not relaunch a clean activity
+        if(savedInstanceState != null){
+            mCurrentIndex = savedInstanceState.getInt(KEY_INDEX,0);
+        }
     }
 
     @Override
