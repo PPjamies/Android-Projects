@@ -2,6 +2,7 @@ package com.example.geoquiz;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
@@ -115,10 +116,15 @@ public class MainActivity extends AppCompatActivity {
         mNextButton = findViewById(R.id.next_button);
         mNextButton.setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onClick(View v){
-                enableButtons();
-                mCurrentIndex = (mCurrentIndex+1)% mQuestions.length;
-                updateQuestion();
+            public void onClick(View v) {
+                if (mCurrentIndex < mQuestions.length-1){
+                    enableButtons();
+                    mCurrentIndex = (mCurrentIndex + 1) % mQuestions.length;
+                    updateQuestion();
+                }else {
+                    String score = getString(R.string.your_score) + ((mScoreIndex*100)/mQuestions.length) + "%";
+                    Toast.makeText(MainActivity.this,score,Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
@@ -137,6 +143,7 @@ public class MainActivity extends AppCompatActivity {
         //checks if there was a previous saved instance state, if not relaunch a clean activity
         if(savedInstanceState != null){
             mCurrentIndex = savedInstanceState.getInt(KEY_INDEX,0);
+            mScoreIndex = savedInstanceState.getInt(SCORE_INDEX, 0);
         }
     }
 
@@ -163,6 +170,7 @@ public class MainActivity extends AppCompatActivity {
         super.onSaveInstanceState(savedInstanceState);
         Log.i(TAG,"onSaveInstanceState"); //creating a log
         savedInstanceState.putInt(KEY_INDEX, mCurrentIndex); //saving additional information
+        savedInstanceState.putInt(SCORE_INDEX, mScoreIndex); //save the score from current quiz
     }
 
     @Override
