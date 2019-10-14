@@ -1,0 +1,9 @@
+Application attempts to recreate the Starbucks mobile app.
+Application includes browsing drink items, adding items into users' cart, and proceeding to checkout.
+Additional features includes printing receipt through wifi, star transferring, and changing name of order.
+
+Due to scope, project does not include:
+-select a Starbucks from map.
+-look up the song playing in Starbucks.
+-view message inbox.
+-purchase Starbucks giftcard.
