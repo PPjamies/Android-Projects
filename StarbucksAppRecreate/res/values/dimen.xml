@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="header_size">
+        30sp
+    </dimen>
+    <dimen name="p_size">
+        20sp
+    </dimen>
+    <dimen name="tag_size">
+        15sp
+    </dimen>
+    <dimen name="login_p_size">
+        24sp
+    </dimen>
+</resources>
