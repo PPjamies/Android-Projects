@@ -3,6 +3,7 @@ package com.example.criminalintent;
 import java.util.Date;
 import java.util.UUID;
 
+//This class defines a crime
 public class Crime {
     private UUID mId;
     private String mTitle;
