@@ -1,0 +1,27 @@
+<resources>
+
+    <string name="app_name">2Piece</string>
+
+    <string name="star_image">star_image</string>
+
+    <string name="send_stars_label">Send Stars to a Friend</string>
+
+    <string name="email_hint">email</string>
+
+    <string name="send_button_label">send</string>
+
+    <string name="amount_label">amount</string>
+
+    <string name="gift_title">Starbucks Stars and Rewards</string>
+
+    <string-array name="gift_amount_array">
+        <item>25 stars</item>
+        <item>50 stars</item>
+        <item>75 stars</item>
+        <item>100 stars</item>
+        <item>125 stars</item>
+        <item>150 stars</item>
+        <item>custom</item>
+    </string-array>
+
+</resources>
