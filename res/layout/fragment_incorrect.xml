@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0.2"
+        android:text="@string/incorrect"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:id="@+id/incorrect_message"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/incorrect_message"
+        app:layout_constraintLeft_toLeftOf="@id/incorrect_message"
+        app:layout_constraintRight_toRightOf="@id/incorrect_message"
+        android:layout_marginTop="30dp"
+        android:text="@string/ok"
+        android:textSize="15sp"
+        android:id="@+id/try_again_button"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
