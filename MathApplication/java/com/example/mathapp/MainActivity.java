@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
     // connection to server
     public static Socket socket;
-    public String host = "44.224.10.250";
+    public String host = "YOUR_IP_ADDRESS";
     public final int port =3377;
     public static BufferedReader in= null;
     public static PrintWriter out= null;
