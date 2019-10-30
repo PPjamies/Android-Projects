@@ -1,0 +1,7 @@
+MathApp allows users to select a mathematical operation, the mobile device will send the operation to BeanStalk where the server
+will return a math equation back to the mobile application. The user will then answer the equation and send the answer back to the
+server to be vaidated. If the answer is correct the server will send a 0 back to the mobile device to luanch the correct fragment.
+If the answer is incorrect the server will send a 1 back to the mobile device to launch the incorrect fragment. 
+Upon clicking the "I know" button on the correct fragment the application will reset itself.
+Upon clicking the "Try again" button on the incorrect fragment the application will pop the fragment off the backstack and allow
+the user to try again.
