@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ShuffleWordApp</string>
+    <string name="answer">answer</string>
+    <string name="fruit">fruit</string>
+    <string name="flower">flower</string>
+    <string name="animal">animal</string>
+    <string name="answer_hint">answer</string>
+    <string name="placeholder">Select a category</string>
+    <string name="correct">You\'re a genius.</string>
+    <string name="incorrect">Wrong answer. Try again.</string>
+    <string name="i_know">I know</string>
+    <string name="ok">Okay</string>
+</resources>
