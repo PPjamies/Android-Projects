@@ -1,0 +1,3 @@
+ShuffleWordApplication is built similarly to the MathApplication, in which the user selects a category and answers the random question
+generated. The connection between the mobile application and Beanstalk/EC2 is the same as the MathApplication. However, the
+ShuffleWordApplication is connected to DynamoDB, where it grabs an item from the category selected (fruit: apple, grape, melon, etc.)
