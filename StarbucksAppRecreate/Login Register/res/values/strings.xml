@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">StarbucksMobileRecreate</string>
+
+    <!--Starbucks logo content description-->
+    <string name="logo_description">Starbucks Logo</string>
+
+    <!--Logging In and Registering-->
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+
+    <!--Logging In-->
+    <string name="sign_in_button">Sign in</string>
+    <string name="forgot_password_text">Forgot Password?</string>
+
+    <!--Registering-->
+    <string name="personal_info_title">Personal info</string>
+    <string name="security_title">Security</string>
+    <string name="preference_terms_title">Preferences and Terms</string>
+
+    <string name="first_name_hint">First name</string>
+    <string name="last_name_hint">Last name</string>
+    <string name="card_number_hint">Card number</string>
+    <string name="security_code_hint">Security code</string>
+
+    <string name="have_gift_card_label">Already have a Starbucks gift card?</string>
+    <string name="gift_card_info_label">Add your gift card to earn Stars when you use the app to pay in store.</string>
+    <string name="preference_terms_label1">Yes, I\'d like emails from Starbucks</string>
+    <string name="preference_terms_label2">I accept the Terms of Use</string>
+    <string name="preference_terms_label1_tag">Know about products offers, announcements and initiatives.</string>
+    <string name="preference_terms_label2_tag">By joining, I agree to Starbucks Rewards Terms, Starbucks Card Terms, and the Application Terms.</string>
+    <string name="rewards_terms_label">Rewards Terms</string>
+    <string name="card_terms_label">Card Terms</string>
+    <string name="application_terms_label">Application Terms</string>
+    <string name="join_now_label">Join now</string>
+    <string name="must_agree_to_terms_toast">Sorry, in order to order from Starbuck\'s mobile app you must agree to our terms of service</string>
+
+    <!-- forgot password -->
+    <string name="forgot_pw_label">Forgot password</string>
+    <string name="forgot_pw_instructions">Please input the following to change password.</string>
+    <string name="confirm_pw_hint">Confirm password</string>
+    <string name="change_pw">Change password</string>
+
+    <!--Menu items-->
+    <string name="hot_coffees_label">Hot Coffees</string>
+    <string name="cold_coffees_label">Cold Coffees</string>
+    <string name="frap_beverages_label">Frappuccino Blended Beverages</string>
+    <string name="ice_tea_label">Iced Teas</string>
+    <string name="cold_drinks">Cold Drinks</string>
+
+</resources>
