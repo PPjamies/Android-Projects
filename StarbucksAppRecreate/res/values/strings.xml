@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Starbucks_Piece</string>
+
+        <!--Gift Fragment-->
+        <string name="starbuck_logo_alt">starbucks_rewards_logo</string>
+        <string name="star_image_alt">star_image</string>
+        <string name="send_stars_label">Send Stars to a Friend</string>
+        <string name="email_hint">email</string>
+        <string name="send_button_label">send</string>
+        <string name="amount_label">amount</string>
+        <string name="gift_title">Starbucks Stars and Rewards</string>
+
+        <string-array name="gift_amount_array">
+            <item>25 stars</item>
+            <item>50 stars</item>
+            <item>75 stars</item>
+            <item>100 stars</item>
+            <item>125 stars</item>
+            <item>150 stars</item>
+            <item>custom</item>
+        </string-array>
+
+        <!-- TODO: Remove or change this placeholder text -->
+        <string name="card_number_holder">(Card-Number)-Holder</string>
+        <string name="balance_holder">Balance-Holder</string>
+        <string name="details">Details</string>
+        <string name="edit_cards">Edit card payment</string>
+        <string name="more_cards">more cards</string>
+        <string name="add_money">Add money</string>
+        <string name="pay_in_store">Pay in store</string>
+
+</resources>

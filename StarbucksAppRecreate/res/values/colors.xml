@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+
+    <color name="colorPrimaryDark">#00574B</color>
+
+    <color name="colorAccent">#D81B60</color>
+
+
+
+    <color name="starbucksGreen"> #036635</color>
+
+    <color name="starbucks_dark_green">#1f3a33</color>
+
+    <color name="white">#ffffff</color>
+
+    <color name="black">#000000</color>
+
+    <color name="edit_text_grey">#6b6b6b</color>
+
+    <color name="background_tint_grey">#e6e6e6</color>
+
+    <color name="hyperlink_blue">#0000FF</color>
+
+    <color name="decaf_brown">#d6c89a</color>
+
+    <color name="butter_orange">#ffca28</color>
+
+
+</resources>
+
+
+
